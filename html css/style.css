@@ -1,0 +1,38 @@
+.box {
+    widows: 200px;
+    height: 200px;
+    background: linear-gradient(to right, orange , green);
+    margin-top: 20%;
+
+    border: solid violet 4px;
+    border-radius: 15px;
+
+    font-size: 1000%;
+    text-align: center;
+    text-shadow: 2px 2px violet;
+    transform: rotate(10deg);
+
+    animation-name: colour;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+    transition: height 2s;
+}
+
+.box:hover {
+    height: 400px;
+}
+
+@keyframes colour {
+    0% {
+        background: linear-gradient(to right, orange , green);
+    }
+
+    50% {
+        background: linear-gradient(to right, green , orange);
+    }
+
+    100% {
+        background: linear-gradient(to right, orange , green);
+    }
+}
